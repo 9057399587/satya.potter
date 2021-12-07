@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+struct emp
+{
+int empno ;
+char name[10] ;
+int balance, allow, nobal, total ;
+} e[10] ;
+void main()
+{
+int i, n ;
+printf("Enter the number of employees : ") ;
+scanf("%d", &n) ;
+for(i = 0 ; i < n ; i++)
+{
+printf("\nEnter the employee number : ") ;
+scanf("%d", &e[i].empno) ;
+printf("\nEnter the name : ") ;
+scanf("%s", e[i].name) ;
+printf("\nEnter the salary, salary allo & deducation: ") ;
+scanf("%d %d %d", &e[i].balance, &e[i].allow, &e[i].nobal) ;
+
+}
+printf("\nEmp. No. Name \t balance \t Allow \t nobal \tbalance\n\n") ;
+for(i = 0 ; i < n ; i++)
+{
+printf("%d \t %s \t %d \t %d \t %d \t %d \n", e[i].empno,e[i].name, e[i].balance, e[i].allow, e[i].nobal, e[i].balance) ;
+}
+getch() ;
+}
+
+
