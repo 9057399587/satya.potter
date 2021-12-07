@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main()
+{
+    char name[20];
+    char password[10];
+    cout<<"enter the user name";
+    cin>>name;
+    cout<<"enter the password";
+    cin>>password;
+    if(strcmp(name,"admin")==0&&strcmp(password,"pass")==0)
+    {
+        cout<<"\nwelcome\n";
+    }
+    else{
+        cout<<"\nthank";
+    }
+    }
